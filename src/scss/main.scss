@@ -1,0 +1,297 @@
+// fonts
+@font-face {
+    font-family: kanit;
+    src: url(../fonts/KANIT-REGULAR.TTF);
+}
+
+// color
+$backrgound-base-color: #222222;
+$primary-color: #0275d8;
+$warning-color: #f0ad4e;
+$success-color: #5cb85c;
+$danger-color: #d9534f;
+$info-color: #5bc0de;
+
+// size 
+:root {
+    --nav-height: 90px;
+}
+
+// mixin
+@mixin button($bg-color) {
+    background: $bg-color;
+    color: #fff;
+    &:hover {
+        background: darken($bg-color, 10%);
+    }
+}
+
+// global style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+}
+body {
+    overflow-x: hidden;
+}
+// button
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 3px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 180px;
+    transition: .2s;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-primary {
+    @include button($primary-color);
+}
+
+// navbar 
+header.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $backrgound-base-color;
+    height: var(--nav-height);
+    position: sticky;
+    top: 0;
+}
+header.main-navbar .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    color: #fff;
+}
+header.main-navbar .logo .highlight-word {
+    color: $info-color;
+}
+header.main-navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+
+    &:hover {
+        background: lighten($backrgound-base-color, 10%);
+    }
+}
+header.main-navbar .hamburger .line {
+    border: 2px solid #fff;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+header.main-navbar .navbar{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+header.main-navbar .navbar .u-list .list {
+    display: inline;
+    margin-right: 15px;
+    padding: 5px 10px;
+    transition: .2s;
+    border-radius: 5px;
+
+    &:hover:not(.list.active) {
+        background: lighten($backrgound-base-color, 10%);
+    }
+    &.active {
+        background: lighten($backrgound-base-color, 10%);
+    }
+}
+header.main-navbar .navbar .u-list .list .a-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+header.main-navbar .navbar .sign-btn {
+    margin-left: 30px;
+}
+
+// body content
+article.main {
+    width: 100%;
+    min-height: calc(100vh - var(--nav-height));
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../../assets/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+article.main .main-title {
+    width: 100%;
+    background: transparent;
+}
+article.main .main-title .header-text {
+    margin-top: 0;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+article.main .main-title .top-nav .u-list{
+   display: flex;
+   justify-content: center; 
+}
+article.main .main-title .top-nav .u-list .list {
+    list-style: none;
+    border: 1px solid $backrgound-base-color;
+    background: #fff;
+
+    &#nav-left {
+        border-radius: 10px 0 0 10px;
+    }
+    &#nav-right {
+        border-radius: 0 10px 10px 0;
+    }
+    &:hover:not(.list.active) {
+        background: lighten($backrgound-base-color, 30%);
+    }
+    &.active {
+        background: lighten($backrgound-base-color, 10%);
+        
+        & .a-link {
+            color: #fff;
+        }
+    }
+
+}
+article.main .main-title .top-nav .u-list .list .a-link {
+    text-decoration: none;
+    color: $backrgound-base-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+article.main .featur .slide-container {
+    position: absolute;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    background: #fff;
+    border-radius: 10px;
+}
+article.main .featur .slide-container .text {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+article.main .featur .slide-container .slide-image {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+article.main .featur .slide-container .slide-image .src_img {
+    width: 100%;
+}
+
+@media only screen and(max-width: 1250px) {
+    header.main-navbar .navbar .u-list .list .a-link {
+        font-size: 15px;
+    }
+}
+@media only screen and(max-width: 1100px) {
+    header.main-navbar .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+    header.main-navbar .navbar {
+        position: absolute;
+        background: $backrgound-base-color;
+        top: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+        right: 0;
+        transform: translateX(100%);
+        transition: .3s;
+
+        &.active-absolute {
+            transform: translateX(0);
+        }
+    }
+    header.main-navbar .navbar .u-list {
+        width: 100%;
+    }
+    header.main-navbar .navbar .u-list .list {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    header.main-navbar .navbar .sign-btn {
+        width: 100%;
+        margin: 0;
+    }
+    header.main-navbar .navbar .sign-btn .btn{
+        width: 100%;
+        padding: 2px 4px;
+    }   
+}
+@media only screen and(max-width: 740px) {
+    article.main .featur .slide-container {
+        width: 500px;
+        transition: .4s;
+    }
+}
+@media only screen and(max-width: 500px) {
+    article.main .featur .slide-container {
+        width: 300px;
+        top: 55%;
+    }
+    header.main-navbar .logo {
+        font-size: 35px;
+    }
+    article.main .main-title .top-nav .u-list .list .a-link {
+        padding: 2px 4px;
+        font-size: 18px;
+    }
+}
+
+// slide animation
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    85% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
