@@ -20,11 +20,11 @@ body {
   overflow-y: scroll;
   /* Allow vertical scrolling */ }
 
-/* line 40, src/scss/main.scss */
+/* line 41, src/scss/main.scss */
 body::-webkit-scrollbar {
   display: none; }
 
-/* line 44, src/scss/main.scss */
+/* line 45, src/scss/main.scss */
 .btn {
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   cursor: pointer; }
 
-/* line 57, src/scss/main.scss */
+/* line 58, src/scss/main.scss */
 .btn-primary {
   background: #0275d8;
   color: #fff; }
@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
   .btn-primary:hover {
     background: #025aa5; }
 
-/* line 62, src/scss/main.scss */
+/* line 63, src/scss/main.scss */
 header.main-navbar {
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ header.main-navbar {
   top: 0;
   z-index: 1; }
 
-/* line 72, src/scss/main.scss */
+/* line 73, src/scss/main.scss */
 header.main-navbar .logo {
   font-size: 3rem;
   font-weight: bold;
@@ -65,11 +65,11 @@ header.main-navbar .logo {
   margin-left: 20px;
   color: #fff; }
 
-/* line 79, src/scss/main.scss */
+/* line 80, src/scss/main.scss */
 header.main-navbar .logo .highlight-word {
   color: #5bc0de; }
 
-/* line 82, src/scss/main.scss */
+/* line 83, src/scss/main.scss */
 header.main-navbar .hamburger {
   display: flex;
   flex-direction: column;
@@ -78,47 +78,47 @@ header.main-navbar .hamburger {
   padding: 5px;
   border-radius: 5px;
   display: none; }
-  /* line 91, src/scss/main.scss */
+  /* line 92, src/scss/main.scss */
   header.main-navbar .hamburger:hover {
     background: #3c3c3c; }
 
-/* line 95, src/scss/main.scss */
+/* line 96, src/scss/main.scss */
 header.main-navbar .hamburger .line {
   border: 2px solid #fff;
   margin-top: 2px;
   margin-bottom: 2px; }
 
-/* line 100, src/scss/main.scss */
+/* line 101, src/scss/main.scss */
 header.main-navbar .navbar {
   display: flex;
   margin-right: 20px;
   align-items: center; }
 
-/* line 105, src/scss/main.scss */
+/* line 106, src/scss/main.scss */
 header.main-navbar .navbar .u-list .list {
   display: inline;
   margin-right: 15px;
   padding: 5px 10px;
   transition: .2s;
   border-radius: 5px; }
-  /* line 112, src/scss/main.scss */
+  /* line 113, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list:hover:not(.list.active) {
     background: #3c3c3c; }
-  /* line 115, src/scss/main.scss */
+  /* line 116, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list.active {
     background: #3c3c3c; }
 
-/* line 119, src/scss/main.scss */
+/* line 120, src/scss/main.scss */
 header.main-navbar .navbar .u-list .list .a-link {
   text-decoration: none;
   color: #fff;
   font-size: 20px; }
 
-/* line 124, src/scss/main.scss */
+/* line 125, src/scss/main.scss */
 header.main-navbar .navbar .sign-btn {
   margin-left: 30px; }
 
-/* line 129, src/scss/main.scss */
+/* line 130, src/scss/main.scss */
 article.main {
   width: 100%;
   min-height: calc(100vh - var(--nav-height));
@@ -126,12 +126,12 @@ article.main {
   background-position: center;
   background-size: cover; }
 
-/* line 136, src/scss/main.scss */
+/* line 137, src/scss/main.scss */
 article.main .main-title {
   width: 100%;
   background: transparent; }
 
-/* line 140, src/scss/main.scss */
+/* line 141, src/scss/main.scss */
 article.main .main-title .header-text {
   margin-top: 0;
   text-align: center;
@@ -141,33 +141,33 @@ article.main .main-title .header-text {
   font-weight: bold;
   letter-spacing: 1px; }
 
-/* line 149, src/scss/main.scss */
+/* line 150, src/scss/main.scss */
 article.main .main-title .top-nav .u-list {
   display: flex;
   justify-content: center; }
 
-/* line 153, src/scss/main.scss */
+/* line 154, src/scss/main.scss */
 article.main .main-title .top-nav .u-list .list {
   list-style: none;
   border: 1px solid #222222;
   background: #fff; }
-  /* line 158, src/scss/main.scss */
+  /* line 159, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list#nav-left {
     border-radius: 10px 0 0 10px; }
-  /* line 161, src/scss/main.scss */
+  /* line 162, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list#nav-right {
     border-radius: 0 10px 10px 0; }
-  /* line 164, src/scss/main.scss */
+  /* line 165, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list:hover:not(.list.active) {
     background: #6f6f6f; }
-  /* line 167, src/scss/main.scss */
+  /* line 168, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list.active {
     background: #3c3c3c; }
-    /* line 170, src/scss/main.scss */
+    /* line 171, src/scss/main.scss */
     article.main .main-title .top-nav .u-list .list.active .a-link {
       color: #fff; }
 
-/* line 176, src/scss/main.scss */
+/* line 177, src/scss/main.scss */
 article.main .main-title .top-nav .u-list .list .a-link {
   text-decoration: none;
   color: #222222;
@@ -177,7 +177,7 @@ article.main .main-title .top-nav .u-list .list .a-link {
   padding: 5px 10px;
   font-size: 20px; }
 
-/* line 185, src/scss/main.scss */
+/* line 186, src/scss/main.scss */
 article.main .featur .main-slide-container {
   width: 100%;
   display: flex;
@@ -185,7 +185,7 @@ article.main .featur .main-slide-container {
   justify-content: center;
   margin-top: 20px; }
 
-/* line 192, src/scss/main.scss */
+/* line 193, src/scss/main.scss */
 article.main .featur .main-slide-container .slide-container {
   width: 700px;
   overflow: hidden;
@@ -193,34 +193,34 @@ article.main .featur .main-slide-container .slide-container {
   background: #fff;
   border-radius: 10px; }
 
-/* line 199, src/scss/main.scss */
+/* line 200, src/scss/main.scss */
 article.main .featur .main-slide-container .slide-container .text {
   font-size: 30px;
   text-align: center;
   padding: 15px; }
 
-/* line 204, src/scss/main.scss */
+/* line 205, src/scss/main.scss */
 article.main .featur .main-slide-container .slide-container .slide-image {
   width: 100%;
   display: flex;
   animation: slide 16s infinite; }
 
-/* line 209, src/scss/main.scss */
+/* line 210, src/scss/main.scss */
 article.main .featur .main-slide-container .slide-container .slide-image .src_img {
   z-index: 0;
   width: 100%; }
 
 @media only screen and (max-width: 1250px) {
-  /* line 215, src/scss/main.scss */
+  /* line 216, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list .a-link {
     font-size: 15px; } }
 
 @media only screen and (max-width: 1100px) {
-  /* line 220, src/scss/main.scss */
+  /* line 221, src/scss/main.scss */
   header.main-navbar .hamburger {
     display: flex;
     margin-right: 20px; }
-  /* line 224, src/scss/main.scss */
+  /* line 225, src/scss/main.scss */
   header.main-navbar .navbar {
     position: absolute;
     background: #222222;
@@ -230,52 +230,52 @@ article.main .featur .main-slide-container .slide-container .slide-image .src_im
     margin: 0;
     padding: 5px;
     right: 0;
-    transform: translateX(100%);
-    transition: .3s; }
-    /* line 236, src/scss/main.scss */
+    transition: .3s;
+    display: none; }
+    /* line 237, src/scss/main.scss */
     header.main-navbar .navbar.active-absolute {
-      transform: translateX(0); }
-  /* line 240, src/scss/main.scss */
+      display: flex; }
+  /* line 241, src/scss/main.scss */
   header.main-navbar .navbar .u-list {
     width: 100%; }
-  /* line 243, src/scss/main.scss */
+  /* line 244, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list {
     display: block;
     width: 100%;
     margin-bottom: 5px; }
-  /* line 248, src/scss/main.scss */
+  /* line 249, src/scss/main.scss */
   header.main-navbar .navbar .sign-btn {
     width: 100%;
     margin: 0; }
-  /* line 252, src/scss/main.scss */
+  /* line 253, src/scss/main.scss */
   header.main-navbar .navbar .sign-btn .btn {
     width: 100%;
     padding: 2px 4px; } }
 
 @media only screen and (max-width: 740px) {
-  /* line 258, src/scss/main.scss */
+  /* line 259, src/scss/main.scss */
   article.main .featur .main-slide-container .slide-container {
     width: 500px;
     transition: .4s; } }
 
 @media only screen and (max-width: 500px) {
-  /* line 264, src/scss/main.scss */
+  /* line 265, src/scss/main.scss */
   article.main .featur .main-slide-container .slide-container {
     width: 400px;
     top: 55%; }
-  /* line 268, src/scss/main.scss */
+  /* line 269, src/scss/main.scss */
   header.main-navbar .logo {
     font-size: 35px; }
-  /* line 271, src/scss/main.scss */
+  /* line 272, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list .a-link {
     padding: 2px 4px;
     font-size: 18px; }
-  /* line 275, src/scss/main.scss */
+  /* line 276, src/scss/main.scss */
   article.main .featur .main-slide-container .slide-container .text {
     font-size: 20px; } }
 
 @media only screen and (max-height: 850px) {
-  /* line 280, src/scss/main.scss */
+  /* line 281, src/scss/main.scss */
   article.main .featur .main-slide-container .slide-container {
     top: 80%; } }
 

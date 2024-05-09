@@ -36,6 +36,7 @@ $info-color: #5bc0de;
 body {
     overflow: hidden; /* Hide any content that overflows */
     overflow-y: scroll; /* Allow vertical scrolling */
+    
 }
 body::-webkit-scrollbar {
     display: none;
@@ -230,11 +231,11 @@ article.main .featur .main-slide-container .slide-container .slide-image .src_im
         margin: 0;
         padding: 5px;
         right: 0;
-        transform: translateX(100%);
         transition: .3s;
+        display: none;
 
         &.active-absolute {
-            transform: translateX(0);
+            display: flex;
         }
     }
     header.main-navbar .navbar .u-list {
