@@ -34,7 +34,11 @@ $info-color: #5bc0de;
     font-family: kanit;
 }
 body {
-    overflow-x: hidden;
+    overflow: hidden; /* Hide any content that overflows */
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 // button
 .btn {
