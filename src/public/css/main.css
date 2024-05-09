@@ -47,9 +47,10 @@ header.main-navbar {
   background: #222222;
   height: var(--nav-height);
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
-/* line 67, src/scss/main.scss */
+/* line 68, src/scss/main.scss */
 header.main-navbar .logo {
   font-size: 3rem;
   font-weight: bold;
@@ -57,11 +58,11 @@ header.main-navbar .logo {
   margin-left: 20px;
   color: #fff; }
 
-/* line 74, src/scss/main.scss */
+/* line 75, src/scss/main.scss */
 header.main-navbar .logo .highlight-word {
   color: #5bc0de; }
 
-/* line 77, src/scss/main.scss */
+/* line 78, src/scss/main.scss */
 header.main-navbar .hamburger {
   display: flex;
   flex-direction: column;
@@ -70,47 +71,47 @@ header.main-navbar .hamburger {
   padding: 5px;
   border-radius: 5px;
   display: none; }
-  /* line 86, src/scss/main.scss */
+  /* line 87, src/scss/main.scss */
   header.main-navbar .hamburger:hover {
     background: #3c3c3c; }
 
-/* line 90, src/scss/main.scss */
+/* line 91, src/scss/main.scss */
 header.main-navbar .hamburger .line {
   border: 2px solid #fff;
   margin-top: 2px;
   margin-bottom: 2px; }
 
-/* line 95, src/scss/main.scss */
+/* line 96, src/scss/main.scss */
 header.main-navbar .navbar {
   display: flex;
   margin-right: 20px;
   align-items: center; }
 
-/* line 100, src/scss/main.scss */
+/* line 101, src/scss/main.scss */
 header.main-navbar .navbar .u-list .list {
   display: inline;
   margin-right: 15px;
   padding: 5px 10px;
   transition: .2s;
   border-radius: 5px; }
-  /* line 107, src/scss/main.scss */
+  /* line 108, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list:hover:not(.list.active) {
     background: #3c3c3c; }
-  /* line 110, src/scss/main.scss */
+  /* line 111, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list.active {
     background: #3c3c3c; }
 
-/* line 114, src/scss/main.scss */
+/* line 115, src/scss/main.scss */
 header.main-navbar .navbar .u-list .list .a-link {
   text-decoration: none;
   color: #fff;
   font-size: 20px; }
 
-/* line 119, src/scss/main.scss */
+/* line 120, src/scss/main.scss */
 header.main-navbar .navbar .sign-btn {
   margin-left: 30px; }
 
-/* line 124, src/scss/main.scss */
+/* line 125, src/scss/main.scss */
 article.main {
   width: 100%;
   min-height: calc(100vh - var(--nav-height));
@@ -118,12 +119,12 @@ article.main {
   background-position: center;
   background-size: cover; }
 
-/* line 131, src/scss/main.scss */
+/* line 132, src/scss/main.scss */
 article.main .main-title {
   width: 100%;
   background: transparent; }
 
-/* line 135, src/scss/main.scss */
+/* line 136, src/scss/main.scss */
 article.main .main-title .header-text {
   margin-top: 0;
   text-align: center;
@@ -133,33 +134,33 @@ article.main .main-title .header-text {
   font-weight: bold;
   letter-spacing: 1px; }
 
-/* line 144, src/scss/main.scss */
+/* line 145, src/scss/main.scss */
 article.main .main-title .top-nav .u-list {
   display: flex;
   justify-content: center; }
 
-/* line 148, src/scss/main.scss */
+/* line 149, src/scss/main.scss */
 article.main .main-title .top-nav .u-list .list {
   list-style: none;
   border: 1px solid #222222;
   background: #fff; }
-  /* line 153, src/scss/main.scss */
+  /* line 154, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list#nav-left {
     border-radius: 10px 0 0 10px; }
-  /* line 156, src/scss/main.scss */
+  /* line 157, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list#nav-right {
     border-radius: 0 10px 10px 0; }
-  /* line 159, src/scss/main.scss */
+  /* line 160, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list:hover:not(.list.active) {
     background: #6f6f6f; }
-  /* line 162, src/scss/main.scss */
+  /* line 163, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list.active {
     background: #3c3c3c; }
-    /* line 165, src/scss/main.scss */
+    /* line 166, src/scss/main.scss */
     article.main .main-title .top-nav .u-list .list.active .a-link {
       color: #fff; }
 
-/* line 171, src/scss/main.scss */
+/* line 172, src/scss/main.scss */
 article.main .main-title .top-nav .u-list .list .a-link {
   text-decoration: none;
   color: #222222;
@@ -169,45 +170,50 @@ article.main .main-title .top-nav .u-list .list .a-link {
   padding: 5px 10px;
   font-size: 20px; }
 
-/* line 180, src/scss/main.scss */
-article.main .featur .slide-container {
-  position: absolute;
+/* line 181, src/scss/main.scss */
+article.main .featur .main-slide-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; }
+
+/* line 188, src/scss/main.scss */
+article.main .featur .main-slide-container .slide-container {
   width: 700px;
-  transform: translate(-50%, -50%);
-  top: 65%;
-  left: 50%;
   overflow: hidden;
   border: 4px solid #fff;
   background: #fff;
   border-radius: 10px; }
 
-/* line 191, src/scss/main.scss */
-article.main .featur .slide-container .text {
+/* line 195, src/scss/main.scss */
+article.main .featur .main-slide-container .slide-container .text {
   font-size: 30px;
   text-align: center;
   padding: 15px; }
 
-/* line 196, src/scss/main.scss */
-article.main .featur .slide-container .slide-image {
+/* line 200, src/scss/main.scss */
+article.main .featur .main-slide-container .slide-container .slide-image {
   width: 100%;
   display: flex;
   animation: slide 16s infinite; }
 
-/* line 201, src/scss/main.scss */
-article.main .featur .slide-container .slide-image .src_img {
+/* line 205, src/scss/main.scss */
+article.main .featur .main-slide-container .slide-container .slide-image .src_img {
+  z-index: 0;
   width: 100%; }
 
 @media only screen and (max-width: 1250px) {
-  /* line 206, src/scss/main.scss */
+  /* line 211, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list .a-link {
     font-size: 15px; } }
 
 @media only screen and (max-width: 1100px) {
-  /* line 211, src/scss/main.scss */
+  /* line 216, src/scss/main.scss */
   header.main-navbar .hamburger {
     display: flex;
     margin-right: 20px; }
-  /* line 215, src/scss/main.scss */
+  /* line 220, src/scss/main.scss */
   header.main-navbar .navbar {
     position: absolute;
     background: #222222;
@@ -219,44 +225,52 @@ article.main .featur .slide-container .slide-image .src_img {
     right: 0;
     transform: translateX(100%);
     transition: .3s; }
-    /* line 227, src/scss/main.scss */
+    /* line 232, src/scss/main.scss */
     header.main-navbar .navbar.active-absolute {
       transform: translateX(0); }
-  /* line 231, src/scss/main.scss */
+  /* line 236, src/scss/main.scss */
   header.main-navbar .navbar .u-list {
     width: 100%; }
-  /* line 234, src/scss/main.scss */
+  /* line 239, src/scss/main.scss */
   header.main-navbar .navbar .u-list .list {
     display: block;
     width: 100%;
     margin-bottom: 5px; }
-  /* line 239, src/scss/main.scss */
+  /* line 244, src/scss/main.scss */
   header.main-navbar .navbar .sign-btn {
     width: 100%;
     margin: 0; }
-  /* line 243, src/scss/main.scss */
+  /* line 248, src/scss/main.scss */
   header.main-navbar .navbar .sign-btn .btn {
     width: 100%;
     padding: 2px 4px; } }
 
 @media only screen and (max-width: 740px) {
-  /* line 249, src/scss/main.scss */
-  article.main .featur .slide-container {
+  /* line 254, src/scss/main.scss */
+  article.main .featur .main-slide-container .slide-container {
     width: 500px;
     transition: .4s; } }
 
 @media only screen and (max-width: 500px) {
-  /* line 255, src/scss/main.scss */
-  article.main .featur .slide-container {
-    width: 300px;
+  /* line 260, src/scss/main.scss */
+  article.main .featur .main-slide-container .slide-container {
+    width: 400px;
     top: 55%; }
-  /* line 259, src/scss/main.scss */
+  /* line 264, src/scss/main.scss */
   header.main-navbar .logo {
     font-size: 35px; }
-  /* line 262, src/scss/main.scss */
+  /* line 267, src/scss/main.scss */
   article.main .main-title .top-nav .u-list .list .a-link {
     padding: 2px 4px;
-    font-size: 18px; } }
+    font-size: 18px; }
+  /* line 271, src/scss/main.scss */
+  article.main .featur .main-slide-container .slide-container .text {
+    font-size: 20px; } }
+
+@media only screen and (max-height: 850px) {
+  /* line 276, src/scss/main.scss */
+  article.main .featur .main-slide-container .slide-container {
+    top: 80%; } }
 
 @keyframes slide {
   0% {
